@@ -47,7 +47,7 @@ nav ul li:hover {
 /* search section  */
 .search {
     margin-left: auto;
-    align-items: center;
+    align-items: center; 
 }
 .search input {
     background-color: rgba(255, 255, 255, 0.11);
