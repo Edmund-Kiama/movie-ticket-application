@@ -15,12 +15,13 @@ body{
 
 #header {
     display: flex;
-    padding-top: 10px;
+   
     padding-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(0, 0, 0, 0.76);
 }
 nav ul {
+    padding-top: 10px;
     display: flex;
     list-style: none;
     gap: 35px;
@@ -48,6 +49,8 @@ nav ul li:hover {
 .search {
     margin-left: auto;
     align-items: center; 
+    padding-top: 5px;
+    padding-right: 10px;
 }
 .search input {
     background-color: rgba(255, 255, 255, 0.11);
