@@ -15,16 +15,16 @@ body{
 
 #header {
     display: flex;
-    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
-}
-nav {
     background-color: rgba(0, 0, 0, 0.76);
 }
 nav ul {
     display: flex;
     list-style: none;
     gap: 35px;
+    cursor: pointer;
 }
 #logo{
     background-color: #D94C44;
