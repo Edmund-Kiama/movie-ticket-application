@@ -56,14 +56,14 @@ function getMovies () {
 //for creating elements that contain film details
 function displayMovie (film) {  
     //creates div
-    let listContainer = document.createElement('div');
+    let listContainer = document.createElement('li');
     listContainer.classList.add('film-div')
     //creates div
     let containerForSelecting = document.createElement('div')
     containerForSelecting.classList.add('selector')
     // creates li 
-    let oneListingOfFilm = document.createElement('li')  //<li></li>
-    oneListingOfFilm.textContent = `${film.title}`   //<li>film.title</li>
+    let oneListingOfFilm = document.createElement('p') 
+    oneListingOfFilm.textContent = `${film.title}`  
     oneListingOfFilm.classList.add('film-oneList')
     //creates buy button
     let buyTicket = document.createElement('button');

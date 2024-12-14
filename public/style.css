@@ -104,7 +104,7 @@ nav ul li:hover {
 .selector{
     width: 300px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 .selector:hover {
     background-color: rgb(235, 235, 235);
