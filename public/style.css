@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+}
+body{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background: linear-gradient(rgba(26,26,26,0.9),rgba(26,26,26,0.8)),
+                url(https://cdn.evt.com/wp-content/uploads/2022/12/21103040/BB__9147-2000x1200.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+        /* HEADER SECTION  */
+
+#header {
+    display: flex;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.76);
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+#logo{
+    background-color: #D94C44;
+    font-size: 20px;
+    width: 100px;
+    font-weight: bolder;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+nav ul li {
+    color: rgb(204, 204, 204);
+    transition: 0.2s;
+}
+nav ul li:hover {
+    color: white;
+}
+/* search section  */
+.search {
+    margin-left: auto;
+    align-items: center;
+}
+.search input {
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 1px solid black;
+    border-radius: 40px;
+    border-left: none;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+        /* MAIN CONTAINER SECTION */
+
+.style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    background-color: #18191bb6;
+    padding-right: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+#listing {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #313131;
+    width: 500px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Movie Listing  */
+#listing h2 {
+    margin: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+/* the ul  */
+#movie-list {
+    list-style: none;
+    margin-right: auto;
+}
+/* the li created  */
+.film-oneList {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 500px;
+}
+/* the div created  */
+.selector{
+    width: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.selector:hover {
+    background-color: rgb(235, 235, 235);
+    color: black;
+    font-weight: bold;
+}
+.movie-sold {
+    width: 300px;
+    color: black;
+    background-color: #D94C44;
+}
+/* another div created  */
+.film-div {
+    display: flex;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    width: 350px;
+  
+}
+
+        /* BUTTONS SECTION  */
+
+/* buy button  */
+.buyButton {
+    background: #D94C44;
+    color: white;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buyButton:hover {
+    font-size: larger;
+    font-weight: bolder;
+    width: 70px;
+    background: red;
+}
+/* delete button  */
+.deleteButton{
+    background:  white;
+    color:#D94C44;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.deleteButton:hover {
+    font-size: larger;
+    font-weight: bolder;
+    width: 120px;
+    background: white;
+    color: #D94C44;
+}
+.soldButton {
+    background: black;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+        /* MOVIE POSTER, TITLE, RUNTIME, ETC SECTION  */
+
+#container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* poster image  */
+#container img {
+    width: 350px;
+}
+#movie-title {
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+/* runtime and showtime */
+.timing {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 10px;
+}
+#showtime, 
+#runtime {
+    color: rgb(161, 161, 161);
+    font-style: italic;
+}
+#tickets {
+    font-size: 20px;
+}

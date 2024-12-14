@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Movies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body> 
+        <section id="header">
+            <nav>
+                <ul>
+                    <li id="logo">KIAMA</li>
+                    <li>HOME</li>
+                    <li>MOVIES</li>
+                    <li>TV SERIES</li>
+                    <li>TOP IMDB</li>
+                </ul>
+            </nav>
+                <div class="search">
+                    <input 
+                        type="text"
+                        placeholder="Enter keywords"
+                        id="search"
+                    >
+                </div>
+        </section>
+
+        <div class="style">
+            <section id="main-container">
+                <div id="listing">
+                    <h2>Movie Listings</h2>
+
+                    <ul id="movie-list">
+                        <li></li>
+                    </ul> 
+                </div>
+
+                <div id="container">
+                    <img    
+                        src="https://cdn.evt.com/wp-content/uploads/2022/12/21103040/BB__9147-2000x1200.jpg"
+                        id="posterImage"
+                    >
+                
+                    <h1 id="movie-title"></h1> <!-- Our movie title -->
+
+                    <div class="timing">
+
+                        <p id="runtime"></p> <!-- runtime  -->
+                        <p id="showtime"></p>  <!-- showtime  -->
+                    </div>
+                    
+                    <p id="tickets"></p> <!-- tickets available  -->
+                </div>
+            </section>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
