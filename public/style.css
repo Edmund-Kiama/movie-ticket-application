@@ -63,7 +63,15 @@ nav ul li:hover {
 }
 
         /* MAIN CONTAINER SECTION */
-
+#note {
+    display: flex;
+    color: #D94C44;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-size: 30px;
+    margin-top: 10px;
+}
 .style {
     display: flex;
     align-items: center;
