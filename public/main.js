@@ -61,6 +61,7 @@ function displayMovie (film) {
     //creates div
     let containerForSelecting = document.createElement('div')
     containerForSelecting.classList.add('selector')
+    containerForSelecting.id = `film${film.id}`
     // creates li 
     let oneListingOfFilm = document.createElement('p') 
     oneListingOfFilm.textContent = `${film.title}`  
@@ -69,6 +70,8 @@ function displayMovie (film) {
     let buyTicket = document.createElement('button');
     buyTicket.textContent = 'BUY';
     buyTicket.classList.add('buyButton')
+    buyTicket.id = `buyButton${film.id}` 
+    buyTicket.disabled = true; //disables the button
     //creates buy button
     let deleteTicket = document.createElement('button');
     deleteTicket.textContent = 'DELETE';
@@ -123,6 +126,7 @@ function displayMovie (film) {
             buyTicket.classList.add('soldButton');
             //for sold movie div
             containerForSelecting.classList.remove('selector')
+            containerForSelecting.classList.remove('selectedFilm')
             containerForSelecting.classList.add('movie-sold')
             //strikethrough for sold movie
             oneListingOfFilm.innerHTML=`<s>${film.title}</s>`
@@ -161,6 +165,24 @@ function movieClick (film) {
     let availableTickets = film.capacity - film.tickets_sold;
     //this lets the 'sold-out' persists when the movie is reselected
     availableTickets <= 0 ? tickets.textContent = `Sold Out!`: tickets.innerHTML = `<strong>${availableTickets}</strong> tickets available`;
+
+    //controls which film has the buy button enabled and disabled
+    let allBuyButtons = document.getElementsByClassName('buyButton')
+    let buyTicket = document.getElementById(`buyButton${film.id}`)
+    for (let button of allBuyButtons){
+        button.disabled = true; //disables all buy buttons
+    }
+    buyTicket.disabled = false; //enables the buy button of the selected film
+
+    //controls the styling of which film has been selected and differentiates it from the rest (unselected)
+    let allFilms = document.getElementsByClassName('selector')
+    let selectedFilm = document.getElementById(`film${film.id}`)
+    for (let film of allFilms){
+        film.classList.remove('selectedFilm') //ensures that previously selected film have their class of selectedFilm removed
+        film.classList.add('selector')
+    }
+    selectedFilm.classList.add('selectedFilm') //adds a class to the selected film
+
 }
 
                     //UPDATES TICKETS AVAILABLE ON THE DOM
